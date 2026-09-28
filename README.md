@@ -1,2 +1,21 @@
-# immersive-media-evidence
-실감미디어혁신공유대학 성과분석 및 휴먼–AI–XR 후속사업 제언
+# 실감미디어혁신공유대학 성과분석 및 후속 사업 제언
+
+2021–2025 공개 근거 탐색과 휴먼–AI–XR 기반 후속사업 제언을 제공하는 정적 웹사이트입니다.
+
+## GitHub Pages
+
+Settings → Pages → Deploy from a branch → main → /(root) → Save.
+배포 주소: https://seokhee5hs.github.io/immersive-media-evidence/
+
+빌드·설치 없이 HTML, CSS, JavaScript를 직접 제공합니다. .nojekyll로 Jekyll 처리를 비활성화합니다.
+
+## 자료와 입력
+
+- 19개 기간 내 근거 기록은 전체 성과 총계가 아닙니다.
+- 2027년 예산은 정부안 단계이며 확정·선정액과 구분합니다.
+- 출처는 웹의 근거와 방법 메뉴 및 evidence.json에 있습니다.
+- 성과 입력은 각 브라우저 localStorage에만 저장됩니다. 공동 서버에 저장되지 않습니다.
+- 이전 사이트의 입력은 자동 이전되지 않습니다. 이전 사이트에서 JSON 내보내기 후 새 사이트에서 가져오기를 사용하세요.
+- PDF·이미지·대학 로고·인용 원문의 권리는 각 발행기관에 있습니다. 이 저장소는 타 기관 자료에 별도 재이용 허락을 부여하지 않습니다.
+
+공식 사업단 사이트가 아닌 공개 근거 기반 독립 분석입니다.
