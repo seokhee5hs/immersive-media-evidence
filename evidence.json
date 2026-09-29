@@ -251,6 +251,56 @@
       "date": "상시 사업 소개",
       "accessed": "2026-09-29",
       "url": "https://www.iitp.kr/web/lay1/program/S1T43C233/business/list.do?cat01=BS05&cat02=BSA17&cpage=1&sort=latest&rows=9"
+    },
+    {
+      "id": "S35",
+      "title": "통계청 · 장래인구추계 2022–2072 · 학령인구(6–21세)",
+      "date": "2023-12-14",
+      "accessed": "2026-09-29",
+      "url": "https://www.kostat.go.kr/board.es?act=view&bid=207&list_no=428476&mid=a10301020100"
+    },
+    {
+      "id": "S36",
+      "title": "한국은행 · BOK 이슈노트 2026-19 · 청년고용 위축, AI 탓인가?",
+      "date": "2026-08-18",
+      "accessed": "2026-09-29",
+      "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?menuNo=200433&nttId=11063845"
+    },
+    {
+      "id": "S37",
+      "title": "문체부·KOCCA · 2026 문화체육관광 R&D 추진계획 예고",
+      "date": "2026-01-08 · WelCon 등록 01-12",
+      "accessed": "2026-09-29",
+      "url": "https://welcon.kocca.kr/en/info/business/1956958"
+    },
+    {
+      "id": "S38",
+      "title": "KOCCA · 2026 K-콘텐츠 인재양성 로드맵",
+      "date": "2026-01-12 · WelCon 등록",
+      "accessed": "2026-09-29",
+      "url": "https://welcon.kocca.kr/ko/info/business/1956962"
+    },
+    {
+      "id": "S39",
+      "title": "Khronos · glTF Gaussian Splatting 확장 후보안 발표",
+      "date": "2026-02-03",
+      "accessed": "2026-09-29",
+      "url": "https://www.khronos.org/news/press/gltf-gaussian-splatting-press-release"
+    },
+    {
+      "id": "S40",
+      "title": "Google · Project Genie 실험적 연구 프로토타입 소개",
+      "date": "2026-01-29",
+      "accessed": "2026-09-29",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
+    },
+    {
+      "id": "S41",
+      "title": "사용자 제공 · AI 전환기 실감미디어 인재양성 후속사업 방향 · 검토 메모",
+      "date": "2026-09-29",
+      "accessed": "2026-09-29",
+      "url": "document-review.md",
+      "kind": "사용자 제공 분석 문서 · 공식 통계 아님"
     }
   ],
   "records": [
@@ -922,6 +972,162 @@
       "outputs": "학부→대학원 진학 추적, 연구 참여·학위·논문·산학 프로젝트를 구분한 성과 원장. 마이크로디그리를 석박사 배출로 집계하지 않습니다.",
       "gate": "공식 소개: 총 6년(4+2), 일반 지원수준 연 10억원 내외. 2026년 정부지원 65.01억원·8개 계속과제·평균 8억원. 2027년 이후 예산은 변동 가능하며 신규 공고는 별도 확인해야 합니다.",
       "source": "S33"
+    }
+  ],
+  "transition": {
+    "population": {
+      "baselineYear": 2022,
+      "baseline": 750,
+      "forecastYear": 2040,
+      "forecast": 413,
+      "unit": "만명",
+      "source": "S35",
+      "status": "전망 · 2022년 기준 추계"
+    },
+    "employment": {
+      "decline": 28.5,
+      "highExposureDecline": 26.8,
+      "share": 94,
+      "source": "S36",
+      "causal": false
+    }
+  },
+  "researchFields": [
+    {
+      "id": "creation",
+      "name": "콘텐츠 제작·미디어",
+      "icon": "01",
+      "skills": "실시간 그래픽 · 영상·음향 · 가상제작 · 생성형 콘텐츠",
+      "question": "일관된 품질의 자산을 제작하고 엔진·촬영·렌더링 작업에 통합할 수 있는가?",
+      "research": "수작업·AI 보조 방식을 비교해 제작시간, 수정 비용, 시각·음향 품질과 권리 이력을 검증합니다.",
+      "education": "기초 조형·영상·사운드 + 제작 파이프라인 + 기술 아트·검수",
+      "route": "문체부·KOCCA의 문화기술 연구개발·제작기술 및 인재양성 경로 검토",
+      "target": "kocca",
+      "sources": [
+        "S37",
+        "S38"
+      ]
+    },
+    {
+      "id": "space",
+      "name": "공간·디지털트윈",
+      "icon": "02",
+      "skills": "공간 캡처 · 3D/볼류메트릭 · 시뮬레이션 · 압축·전송",
+      "question": "공간 데이터를 정확하게 재현하고 다른 기기·서비스에서 재사용할 수 있는가?",
+      "research": "스플래팅·전통 3D 방식의 재현오차, 용량, 지연, 상호운용성을 비교합니다. 월드모델은 정확한 현실 복제와 구분합니다.",
+      "education": "공간기하·그래픽스 + 캡처·최적화 + 데이터·시스템 통합",
+      "route": "과기정통부·IITP 실감콘텐츠 핵심기술과 지역 수요 기반 공동연구 검토",
+      "target": "iitp",
+      "sources": [
+        "S32",
+        "S39",
+        "S40"
+      ]
+    },
+    {
+      "id": "interaction",
+      "name": "디바이스·상호작용",
+      "icon": "03",
+      "skills": "XR · 웨어러블 · 센서·햅틱 · 다중감각 · 인터페이스",
+      "question": "다양한 사용자가 기기·공간을 오가며 안전하고 편하게 상호작용할 수 있는가?",
+      "research": "감각 동기화, 입력 정확도, 착용 부담, 접근성을 평가합니다. 센서·소재·HW 파트너가 필요한 연구는 전문팀과 공동 추진합니다.",
+      "education": "HCI·인간공학 + 인터랙션 구현 + 사용자 평가",
+      "route": "과기정통부·IITP 공간컴퓨팅·인터페이스 연구 경로 검토",
+      "target": "iitp",
+      "sources": [
+        "S32"
+      ]
+    },
+    {
+      "id": "service",
+      "name": "문화·산업 서비스",
+      "icon": "04",
+      "skills": "공연·전시 · 관광 · 스포츠 · 교육·훈련 · 산업 현장",
+      "question": "현장 문제를 해결하고 반복 사용 가능한 서비스로 발전하는가?",
+      "research": "관람 경험·학습 전이·업무 오류·운영비 등 사용 목적별 지표를 설정합니다. 의료·안전 관련 적용은 별도의 전문 검증이 필요합니다.",
+      "education": "서비스 기획 + 도메인 이해 + 기업·기관 현장 PBL",
+      "route": "문화·관광·스포츠는 문체부·KOCCA, 숙련전수 기반기술은 IITP와 개별 RFP 대조",
+      "target": "kocca",
+      "sources": [
+        "S37",
+        "S29",
+        "S32"
+      ]
+    },
+    {
+      "id": "agent",
+      "name": "지능형 콘텐츠·에이전트",
+      "icon": "05",
+      "skills": "AI 캐릭터 · 공간지능 · 대화·행동 · 생성·제어",
+      "question": "AI의 행동과 콘텐츠를 제어하고 오류·비용을 검증할 수 있는가?",
+      "research": "캐릭터 일관성, 근거 정확도, 장기 상호작용, 추론비용을 측정합니다. 기술 데모를 완전 자동화된 제품으로 해석하지 않습니다.",
+      "education": "AI·프로그래밍 + 서사·행동 설계 + 평가·운영",
+      "route": "문화콘텐츠 목적의 KOCCA 연구와 IITP 공통기술 연구를 문제별로 구분",
+      "target": "iitp",
+      "sources": [
+        "S37",
+        "S32",
+        "S40"
+      ]
+    },
+    {
+      "id": "trust",
+      "name": "신뢰·평가·표준",
+      "icon": "06",
+      "skills": "저작권·출처 · 개인정보 · 접근성 · 품질·표준",
+      "question": "재사용 가능한 콘텐츠를 책임 있게 만들고 성능을 입증하는가?",
+      "research": "권리 추적, 생성물 검증, 사용자 연구와 벤치마크를 설계합니다. 특정 포맷 지원이 표준 기여 실적을 뜻하지는 않습니다.",
+      "education": "연구방법 + 데이터·권리 관리 + 실험 재현·표준 이해",
+      "route": "문체부 저작권 연구와 각 부처 과제의 평가·상호운용 모듈로 공동기획",
+      "target": "kocca",
+      "sources": [
+        "S29",
+        "S39"
+      ]
+    }
+  ],
+  "learnerPaths": [
+    {
+      "id": "undergrad",
+      "label": "학부·초기 경력",
+      "title": "기초를 갖추고 실제 문제를 완수하는 경험",
+      "steps": [
+        "기초 조형·미디어·컴퓨팅",
+        "한 학기 스튜디오 PBL",
+        "기업 멘토와 현장 검증",
+        "직무 포트폴리오·경력 진입"
+      ],
+      "detail": "기획·제작·통합·검증 역할을 교대하고 결과물, 도구·AI 사용 기록, 사용자 시험 보고서를 함께 평가합니다. 기업 현장 과정은 학점·보상·멘토·안전 조건을 협약으로 정합니다.",
+      "metric": "직무 일치 취업률 · 프로젝트 후 채용 전환 · 12개월 경력 유지",
+      "link": "kocca"
+    },
+    {
+      "id": "adult",
+      "label": "성인·재직자",
+      "title": "기존 전문성에 새 기술을 연결하는 재교육",
+      "steps": [
+        "직무·기초 역량 진단",
+        "야간·주말 모듈 학습",
+        "자기 현장의 개선 과제",
+        "업무 적용·전환 추적"
+      ],
+      "detail": "영상·디자인·게임·산업 현장 경력을 학습 자산으로 활용합니다. 짧은 모듈부터 시범 운영하고 학위·학점 인정은 대학 규정에 따라 별도 검토합니다. KOCCA 현업인 교육과의 연계를 확인합니다.",
+      "metric": "수료 후 6개월 현장 적용 · 직무 전환 · 학습 지속률",
+      "link": "kocca"
+    },
+    {
+      "id": "graduate",
+      "label": "석박사·연구자",
+      "title": "재현 가능한 연구와 기술 이전을 만드는 경로",
+      "steps": [
+        "현장 문제·선행연구",
+        "공동 연구실·기업 과제",
+        "논문·특허·벤치마크",
+        "기술이전·후속 연구"
+      ],
+      "detail": "기술 기준선·연구윤리·데이터 권리·재현 실험을 필수로 합니다. IITP 기존 가상융합대학원 협력과 KOCCA CT 전문인력 양성의 후속 공모 가능성을 구분해 검토합니다.",
+      "metric": "사업 귀속 논문·학위 · 재현 가능한 결과 · 기술이전·기업 활용",
+      "link": "iitp"
     }
   ]
 }
